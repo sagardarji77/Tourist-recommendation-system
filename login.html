@@ -1,0 +1,51 @@
+<html>
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Travelix Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css"></head>
+<style>
+.contact{position:absolute;
+         top:30px;
+		 right:200px;}
+</style>
+<body>
+
+	<div class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5"> 
+					<div class="contact_image">
+						
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="contact_form_container">
+						<div class="contact_title">Sign Up</div>
+						<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Name: <input type="text" id="contact_form_name" class="contact_form_name input_field" name="name" value="<?php echo $name;?>">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+  E-mail: <input type="text" id="contact_form_name" class="contact_form_name input_field" name="email" value="<?php echo $email;?>">
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+  Password: <input type="password" id="contact_form_name" class="contact_form_name input_field" name="password" value="<?php echo $password;?>">
+  <span class="error"><?php echo $passwordErr;?></span>
+  <br><br>
+  Confirm password: <input type="password" id="contact_form_name" class="contact_form_name input_field" name="cpassword" value="<?php echo $cpassword;?>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+	</html>

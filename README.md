@@ -1,0 +1,2 @@
+# Tourist-recommendation-system
+This website will help tourist to select place on the basis of their personal interest.such as types of activity user wants to perform .type of place user want to visit etc.
